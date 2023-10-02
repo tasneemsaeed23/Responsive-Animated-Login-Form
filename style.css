@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("photo/neutral-abstract-background-with-gold-stars-glitter.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.login-box {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    height: 530px;
+    background: transparent;
+    border-radius: 20px;
+    border: 3.5px solid rgba(257, 257, 257, 0.7);
+    backdrop-filter: blur(25px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 50px;
+
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+}
+
+.input-box {
+    position: relative;
+    height: 52px;
+    width: 100%;
+    border-bottom: 2px solid #333;
+    margin: 32px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all ease 0.40s;
+    transition: 0.5s;
+
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.remember-forgot {
+    margin: -15px 7px 15px;
+    font-size: 15px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+
+}
+
+.remember-forgot label {
+    padding-right: 50px;
+}
+
+.remember-forgot label input {
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #333;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+    font-size: medium;
+}
+
+button {
+    width: 108px;
+    height: 38px;
+    border-radius: 15px;
+    margin: 4px 23px 14px 14px;
+    border-color: #ffffff;
+    background-image: linear-gradient(45deg, #fbb8c4, #d4d4ef);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-link {
+    text-align: center;
+    font-size: 17px;
+    color: #333;
+    margin-top: 7px;
+
+}
+
+.register-link a {
+    color: #333;
+    text-decoration: none;
+}
+
+.register-link p a {
+    margin-left: 13px;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+    font-size: large;
+}
+
+.input-box input {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    padding: 0 30px 0 6px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 9px;
+    font-size: 20px;
+    color: #333;
+    line-height: 55px;
+}
+
+@media (max-width: 600px) {
+    .login-box {
+        border: none;
+        width: 347px;
+        height: 456px
+    }
+
+    .input-box {
+        width: 308px;
+    }
+
+    .register-link {
+        width: 271px;
+    }
+
+    button {
+        margin-left: 80px
+    }
+
+    .remember-forgot {
+        width: fit-content;
+    }
+
+}
